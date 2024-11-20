@@ -24,7 +24,7 @@ const posts = [
     avatar: "./img/avatar-ducreux.webp",
     post: "./img/avatar-ducreux.webp",
     comment:
-      "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
+      "gm friends! which coin are YOU stacking up today?? post     below and WAGMI!",
     likes: 152,
   },
 ];
@@ -43,10 +43,10 @@ posts.forEach(({ name, username, location, avatar, post, comment, likes }) => {
     <div class="post-img-container">
     <img src="${post}" alt="${name}" class="post-img"/>
     </div>
-    <footer">
+    <footer>
      <img src="./img/icons.png" alt="icons" class="icons"/>
      <p class="likes">${likes} likes</p>
-     <p><span class="username" >${username}</span> ${comment} </p>
+     <p class="username"><span>${username}</span> ${comment} </p>
     </footer>
     </div>`;
 });

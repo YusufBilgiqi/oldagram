@@ -51,7 +51,6 @@ h3 {
 }
 
 p {
-  margin: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -60,10 +59,7 @@ p {
   font-weight: bold;
   padding-left: 1rem;
 }
-.username {
-  display: inline-block;
-  text-wrap: nowrap;
-}
+
 /* Images */
 
 img {
@@ -76,4 +72,13 @@ img {
   width: 100%;
   height: 375px;
   object-fit: cover;
+}
+.username{
+    text-wrap: wrap;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-weight: 300;
+}
+span{
+    font-weight:bold ;
 }

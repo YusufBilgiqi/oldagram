@@ -31,32 +31,23 @@ const posts = [
 
 const element = document.createElement("div");
 
-console.log(element);
-
-posts.forEach(({name,username,location,avatar,post,comment,likes}) => {
-console.log(name, username);
-})
-
-document.body.appendChild(element)
-// const element = document.createElement("div");
-
-// posts.forEach(({ name, username, location, avatar, post, comment, likes }) => {
-//   element.innerHTML += `<div class="post">
-//   <div class="post-header">
-//   <img src="${avatar}" alt="${name}" class="avatar" />
-//   <div class="post-header-info">
-//     <h3>${name}</h3>
-//     <p>${location} </p>
-//     </div>
-//     </div>
-//     <div class="post-img-container">
-//     <img src="${post}" alt="${name}" class="post-img"/>
-//     </div>
-//     <footer">
-//      <img src="./img/icons.png" alt="icons" class="icons"/>
-//      <p class="likes">${likes} likes</p>
-//      <p><span class="username" >${username}</span> ${comment} </p>
-//     </footer>
-//     </div>`;
-// });
-// document.body.appendChild(element);
+posts.forEach(({ name, username, location, avatar, post, comment, likes }) => {
+  element.innerHTML += `<div class="post">
+  <div class="post-header">
+  <img src="${avatar}" alt="${name}" class="avatar" />
+  <div class="post-header-info">
+    <h3>${name}</h3>
+    <p>${location} </p>
+    </div>
+    </div>
+    <div class="post-img-container">
+    <img src="${post}" alt="${name}" class="post-img"/>
+    </div>
+    <footer">
+     <img src="./img/icons.png" alt="icons" class="icons"/>
+     <p class="likes">${likes} likes</p>
+     <p><span class="username" >${username}</span> ${comment} </p>
+    </footer>
+    </div>`;
+});
+document.body.appendChild(element);
